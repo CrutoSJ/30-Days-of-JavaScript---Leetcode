@@ -17,16 +17,15 @@
  * @return {number}
  */
 var reduce = function(nums, fn, init) {
-    let val = init; // set current value
+    let val = init; 
     for (let i = 0; i < nums.length; i++) {
-        val = fn(val, nums[i]); // store the val as a function of the current val with the element
+        val = fn(val, nums[i]); 
     }
-    return val; // output
+    return val; 
 };
 
-// Example usage:
 var nums = [1, 2, 3, 4, 5];
 var sum = reduce(nums, function(a, b) {
     return a + b;
 }, 0);
-console.log(sum); // Output: 15
+console.log(sum); 
